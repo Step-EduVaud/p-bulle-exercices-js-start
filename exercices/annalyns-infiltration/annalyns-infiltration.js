@@ -6,6 +6,8 @@
 // understand types, JSDoc, or TypeScript in order to complete this JavaScript
 // exercise, and can completely ignore this comment block and directive.
 
+import { PureComponent } from "react";
+
 // 👋🏽 Hi again!
 //
 // A quick reminder about exercise stubs:
@@ -27,7 +29,10 @@
  * @return {boolean} Whether or not you can execute a fast attack.
  */
 export function canExecuteFastAttack(knightIsAwake) {
-  throw new Error('Remove this line and implement the function');
+    if(knightIsAwake == false)
+      return true;
+    else
+      return false;
 }
 
 /**
@@ -40,7 +45,22 @@ export function canExecuteFastAttack(knightIsAwake) {
  * @returns {boolean} Whether or not you can spy on someone.
  */
 export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-  throw new Error('Remove this line and implement the function');
+  if(knightIsAwake && archerIsAwake && prisonerIsAwake == false)
+    return true
+  else if (prisonerIsAwake == true)
+    return true
+  else if (archerIsAwake == true)
+    return true
+  else if (knightIsAwake == false)
+    return true
+  else if (knightIsAwake == true)
+    return true
+  else if (archerIsAwake == false)
+    return true
+  else if (knightIsAwake == true && archerIsAwake == true && prisonerIsAwake == false)
+    return true
+  else
+    return false
 }
 
 /**
