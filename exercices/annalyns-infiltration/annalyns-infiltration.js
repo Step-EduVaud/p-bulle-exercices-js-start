@@ -6,7 +6,7 @@
 // understand types, JSDoc, or TypeScript in order to complete this JavaScript
 // exercise, and can completely ignore this comment block and directive.
 
-import { PureComponent } from "react";
+//import { PureComponent } from "react";
 
 // 👋🏽 Hi again!
 //
@@ -29,10 +29,7 @@ import { PureComponent } from "react";
  * @return {boolean} Whether or not you can execute a fast attack.
  */
 export function canExecuteFastAttack(knightIsAwake) {
-    if(knightIsAwake == false)
-      return true;
-    else
-      return false;
+    return knightIsAwake == false
 }
 
 /**
@@ -45,22 +42,7 @@ export function canExecuteFastAttack(knightIsAwake) {
  * @returns {boolean} Whether or not you can spy on someone.
  */
 export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-  if(knightIsAwake && archerIsAwake && prisonerIsAwake == false)
-    return true
-  else if (prisonerIsAwake == true)
-    return true
-  else if (archerIsAwake == true)
-    return true
-  else if (knightIsAwake == false)
-    return true
-  else if (knightIsAwake == true)
-    return true
-  else if (archerIsAwake == false)
-    return true
-  else if (knightIsAwake == true && archerIsAwake == true && prisonerIsAwake == false)
-    return true
-  else
-    return false
+  return knightIsAwake || archerIsAwake || prisonerIsAwake
 }
 
 /**
@@ -72,7 +54,8 @@ export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
  * @returns {boolean} Whether or not you can send a signal to the prisoner.
  */
 export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
-  throw new Error('Remove this line and implement the function');
+  return archerIsAwake == false && prisonerIsAwake
+
 }
 
 /**
@@ -89,7 +72,8 @@ export function canFreePrisoner(
   knightIsAwake,
   archerIsAwake,
   prisonerIsAwake,
-  petDogIsPresent,
+  petDogIsPresent
 ) {
-  throw new Error('Remove this line and implement the function');
+  if (petDogIsPresent) return !archerIsAwake
+  return prisonerIsAwake && !knightIsAwake && !archerIsAwake
 }
