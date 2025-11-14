@@ -29,7 +29,7 @@
  * @return {boolean} Whether or not you can execute a fast attack.
  */
 export function canExecuteFastAttack(knightIsAwake) {
-    return knightIsAwake == false
+    return !knightIsAwake
 }
 
 /**
@@ -54,7 +54,7 @@ export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
  * @returns {boolean} Whether or not you can send a signal to the prisoner.
  */
 export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
-  return archerIsAwake == false && prisonerIsAwake
+  return !archerIsAwake && prisonerIsAwake
 
 }
 
