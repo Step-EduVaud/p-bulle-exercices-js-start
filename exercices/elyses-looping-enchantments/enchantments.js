@@ -10,7 +10,12 @@
  */
 export function cardTypeCheck(stack, card) {
   // 🚨 Use .forEach
-  throw new Error('Implement the cardTypeCheck function');
+  var nbrCard = 0;
+  stack.forEach((cards) => {
+    if (cards == card)
+      nbrCard++;
+  })
+  return nbrCard;
 }
 
 /**
@@ -22,5 +27,17 @@ export function cardTypeCheck(stack, card) {
  */
 export function determineOddEvenCards(stack, type) {
   // 🚨 Use a `for...of` loop
-  throw new Error('Implement the determineOddEvenCards function');
+  var nbrCard = 0;
+  for(let cards of stack)
+  {
+    if (type)
+    {
+      if (cards % 2 == 1)
+        nbrCard++;
+    }
+
+    else if (cards % 2 == 0)
+      continue;
+  }
+  return nbrCard;
 }
