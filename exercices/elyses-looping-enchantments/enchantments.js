@@ -15,7 +15,7 @@ export function cardTypeCheck(stack, card) {
     if (cards == card)
       nbrCard++;
   })
-  return nbrCard;
+  return nbrCard
 }
 
 /**
@@ -30,14 +30,14 @@ export function determineOddEvenCards(stack, type) {
   var nbrCard = 0;
   for(let cards of stack)
   {
-    if (type)
+    if ( type)
     {
       if (cards % 2 == 1)
-        nbrCard++;
+      continue
     }
-
     else if (cards % 2 == 0)
-      continue;
+      continue
+    nbrCard++
   }
-  return nbrCard;
+  return nbrCard
 }
