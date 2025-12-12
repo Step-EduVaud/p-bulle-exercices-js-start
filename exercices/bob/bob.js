@@ -4,5 +4,16 @@
 //
 
 export const hey = (message) => {
-  throw new Error('Remove this line and implement the function');
+  msg = message.trim();
+
+  if (msg.endsWith('?') && !/[a-z]/.test(msg) && /[A-Z]/.test(msg))
+      return "Calm down, I know what I'm doing!"
+  else if (msg.endsWith('?'))
+    return 'Sure.'
+  else if (!/[a-z]/.test(msg) && /[A-Z]/.test(msg))
+    return 'Whoa, chill out!'
+  else if (msg === "")
+    return 'Fine. Be that way!'
+  else 
+    return 'Whatever.'
 };
