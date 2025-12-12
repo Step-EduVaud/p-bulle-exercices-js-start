@@ -33,10 +33,10 @@ export function determineOddEvenCards(stack, type) {
     if ( type)
     {
       if (cards % 2 == 1)
-      continue
+      continue  //Saute l'itération si cards est impair"
     }
     else if (cards % 2 == 0)
-      continue
+      continue  //Saute l'itération si cards est pair"
     nbrCard++
   }
   return nbrCard
