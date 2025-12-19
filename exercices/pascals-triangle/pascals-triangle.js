@@ -3,6 +3,13 @@
 // convenience to get you started writing code faster.
 //
 
-export const rows = () => {
-  throw new Error('Remove this line and implement the function');
+export const rows = (number) => {
+  let result = [[1]]
+  for(let i = 0; i < number; i++) {
+    for (let j = 0; j < numnber; i++)
+    {
+      result[i][j] = result[i-1][j] + result[i-1][j-1];
+    }
+  }
+  return result
 };
