@@ -6,36 +6,40 @@
 export class BankAccount {
   accountBalance;
   isClosed;
+  x
   constructor() {
     this.accountBalance = 0;
     this.isClosed = true;
   }
 
   open() {
-    if (isClosed)
+    if (this.isClosed)
     {
-      accountBalance = 0;
-      isClosed = false;
+      this.accountBalance = 0;
+      this.isClosed = false;
     }
   }
 
   close() {
-    if (!isClosed)
+    if (!this.isClosed)
     {
-      accountBalance = 0;
+      this.accountBalance = 0;
       this.isClosed = true;
     }
   }
 
   deposit(numberAmount) {
-    return this.accountBalance += numberAmount
+    if (!this.isClosed)
+      return this.accountBalance += numberAmount
   }
 
   withdraw() {
-    throw new Error('Remove this line and implement the function');
+    if (!this.isClosed)
+      return this.accountBalance -= numberAmount
   }
 
   get balance() {
+    return this.accountBalance
   }
 }
 
