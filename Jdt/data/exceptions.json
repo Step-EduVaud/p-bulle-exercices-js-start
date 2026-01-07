@@ -24,37 +24,106 @@
   {
     "id": "1e9266a0-e0a3-460d-9bdb-c7b1a9bab4af",
     "type": "commitless",
-    "name": "qcm",
+    "name": "Chore(p_bull): QCM",
     "description": "questions posés par le prof",
-    "date": "2025-12-05T15:20:00.000Z",
+    "date": "2025-12-05T16:20",
     "duration": 15,
-    "status": "Done"
+    "status": "Done",
+    "author": "?"
   },
   {
     "id": "b3cd2be2-a438-44d3-bc33-acc45110496f",
     "type": "commitless",
-    "name": "Theorie",
+    "name": "Chore(P_bulle): Théorie",
     "description": "Fait et correction du test 1",
-    "date": "2025-12-12T15:27:00.000Z",
+    "date": "2025-12-12T16:27",
     "duration": 60,
-    "status": "Done"
+    "status": "Done",
+    "author": "?"
   },
   {
     "id": "f488e857-623e-42b3-ad40-d55a3858a226",
     "type": "commitless",
-    "name": "Revue du test",
+    "name": "Chore(P_Bulle):Revue du test",
     "description": "Revue du test en général avec la classe",
-    "date": "2025-12-19T11:20:00.000Z",
+    "date": "2025-12-19T12:20",
     "duration": 10,
-    "status": "Done"
+    "status": "Done",
+    "author": "?"
   },
   {
     "id": "f08efc23-578b-43ac-a039-27e6bfc938d7",
     "type": "commitless",
     "name": "Empechement",
     "description": "Besoin de voir un prof",
-    "date": "2025-12-19T13:44:00.000Z",
+    "date": "2025-12-19T14:44",
+    "duration": 45,
+    "status": "Done",
+    "author": "?"
+  },
+  {
+    "id": "e0e250a7-33de-41e2-ae0a-3110a0c2d86b",
+    "type": "commitpatch",
+    "sha": "f7d4e3ae7b854262da1a3cf144a17918f5d1880b",
+    "url": "https://github.com/Step-EduVaud/p-bulle-exercices-js-start/commit/f7d4e3ae7b854262da1a3cf144a17918f5d1880b",
+    "name": "feat(gigasecond): terminer l'exercice;",
+    "description": "",
+    "date": "2025-12-05T13:02:00.000Z",
+    "duration": 40,
+    "status": "Done",
+    "author": "Step-EduVaud",
+    "patch": true
+  },
+  {
+    "id": "773e3547-482a-4d37-8d62-ef010ec62e6f",
+    "type": "commitpatch",
+    "sha": "b13eb8cd25ef011f4077c31e57031739ae535d0a",
+    "url": "https://github.com/Step-EduVaud/p-bulle-exercices-js-start/commit/b13eb8cd25ef011f4077c31e57031739ae535d0a",
+    "name": "feat(elyses-looping-enchantments): Terminer l'exercice",
+    "description": "",
+    "date": "2025-12-05T12:31:00.000Z",
+    "duration": 45,
+    "status": "Done",
+    "author": "Step-EduVaud",
+    "patch": true
+  },
+  {
+    "id": "898c18be-3d1d-4628-80ae-5f272de57eee",
+    "type": "commitpatch",
+    "sha": "7eef526bc546a4b3750dea1b2420a6b794f3a0fc",
+    "url": "https://github.com/Step-EduVaud/p-bulle-exercices-js-start/commit/7eef526bc546a4b3750dea1b2420a6b794f3a0fc",
+    "name": "feat(amusement-park): Terminer l'exercice;",
+    "description": "",
+    "date": "2025-11-28T14:50:00.000Z",
+    "duration": 65,
+    "status": "Done",
+    "author": "Step-EduVaud",
+    "patch": true
+  },
+  {
+    "id": "58496ab0-4803-4bd2-83f9-35d8523d56ea",
+    "type": "commitpatch",
+    "sha": "dd3c98a27c5d49abe86b6d4f9fabdb8371ed3bdb",
+    "url": "https://github.com/Step-EduVaud/p-bulle-exercices-js-start/commit/dd3c98a27c5d49abe86b6d4f9fabdb8371ed3bdb",
+    "name": "chore(jdt): reinstall jdt",
+    "description": "",
+    "date": "2025-11-21T12:21:00.000Z",
+    "duration": 15,
+    "status": "Done",
+    "author": "Step-EduVaud",
+    "patch": true
+  },
+  {
+    "id": "66861869-6850-4c6e-b3fc-bbb0139bd061",
+    "type": "commitpatch",
+    "sha": "26978af01b798b020bf6900f5ef69790f29ef773",
+    "url": "https://github.com/Step-EduVaud/p-bulle-exercices-js-start/commit/26978af01b798b020bf6900f5ef69790f29ef773",
+    "name": "feat(peotry-club-door-policy):Terminer l'exercice",
+    "description": "",
+    "date": "2025-11-21T12:27:00.000Z",
     "duration": 60,
-    "status": "Done"
+    "status": "Done",
+    "author": "Step-EduVaud",
+    "patch": true
   }
 ]
