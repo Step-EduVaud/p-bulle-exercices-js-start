@@ -4,47 +4,54 @@
 //
 
 export class BankAccount {
-  accountBalance;
-  isClosed;
-  x
-  constructor() {
-    this.accountBalance = 0;
-    this.isClosed = true;
-  }
+    accountBalance;
+    isClosed;
 
-  open() {
-    if (this.isClosed)
-    {
-      this.accountBalance = 0;
-      this.isClosed = false;
+    constructor() {
+        this.accountBalance = 0;
+        this.isClosed = true;
     }
-  }
 
-  close() {
-    if (!this.isClosed)
-    {
-      this.accountBalance = 0;
-      this.isClosed = true;
+    open() {
+        if (this.isClosed) {
+            this.accountBalance = 0;
+            this.isClosed = false;
+        } else
+            throw new ValueError();
     }
-  }
 
-  deposit(numberAmount) {
-    if (!this.isClosed)
-      return this.accountBalance += numberAmount
-  }
+    close() {
+        if (!this.isClosed) {
+            this.accountBalance = 0;
+            this.isClosed = true;
+        } else
+            throw new ValueError();
+    }
 
-  withdraw() {
-    if (!this.isClosed)
-      return this.accountBalance -= numberAmount
-  }
+    deposit(numberAmount) {
+        if (!this.isClosed && numberAmount >= 0 && this.accountBalance + numberAmount >= 0)
+            return this.accountBalance += numberAmount
+        else
+            throw new ValueError();
+    }
 
-  get balance() {
-    return this.accountBalance
-  }
+    withdraw(numberAmount) {
+        if (!this.isClosed && this.accountBalance >= numberAmount && numberAmount >= 0)
+            return this.accountBalance -= numberAmount
+        else
+            throw new ValueError();
+    }
+
+    get balance() {
+        if (!this.isClosed)
+            return this.accountBalance;
+        else
+            throw new ValueError();
+    }
 }
 
 export class ValueError extends Error {
-  constructor() {
-    super('Bank account error');
-  }
+    constructor() {
+        super('Bank account error');
+    }
 }
