@@ -54,7 +54,7 @@
   {
     "id": "f08efc23-578b-43ac-a039-27e6bfc938d7",
     "type": "commitless",
-    "name": "Empechement",
+    "name": "Chore(Empechement)",
     "description": "Besoin de voir un prof",
     "date": "2025-12-19T14:44",
     "duration": 45,
@@ -125,5 +125,23 @@
     "status": "Done",
     "author": "Step-EduVaud",
     "patch": true
+  },
+  {
+    "id": "27eec298-512d-4250-b1ed-2e64f1f4d738",
+    "type": "commitless",
+    "name": "Chore(Discussion)",
+    "description": "Discussion entre le prof et la class",
+    "date": "2026-01-09T11:20:00.000Z",
+    "duration": 15,
+    "status": "Done"
+  },
+  {
+    "id": "164b0331-0787-42ac-950a-27256af66815",
+    "type": "commitless",
+    "name": "Chore(révision et test 2)",
+    "description": "",
+    "date": "2026-01-09T15:27:00.000Z",
+    "duration": 45,
+    "status": "Done"
   }
 ]
