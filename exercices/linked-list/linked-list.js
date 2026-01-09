@@ -3,23 +3,34 @@
 // convenience to get you started writing code faster.
 //
 
+export class Node {
+  constructor(prev = null, next = null, val = null){
+    this.prev = prev;
+    this.next = next;
+    this.val = val;
+  }
+}
+
 export class LinkedList {
     constructor() {
-        this.tab = [];
+        this.last = new Node();
+        this.first = new Node(null, this.last);
+        this.last.prev = this.first;
     }
     push(numberValue) {
-        this.tab[this.tab.length] = numberValue;
-        return this.tab.length;
+        const newNode = new Node(this.last.prev, this.last, numberValue);
+
+        this.last.prev.next = newNode;
+        this.last.prev = newNode;
     }
 
     pop() {
-        if (this.tab.length === 0)
-            return undefined;
+        const numberValue = this.last.prev.numberValue;
 
-        const result = this.tab[this.tab.length - 1];
+        this.last.prev.prev.next = this.last;
+        this.last.prev = this.last.prev.prev;
 
-        this.tab.length = this.tab.length - 1;
-        return result;
+        return numberValue;
     }
 
 
