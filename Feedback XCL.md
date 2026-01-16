@@ -10,3 +10,8 @@
 - Globalement:
   - Le temps à disposition lors de la dernière séance devrait suffire à acquérir le niveau. Il serait peut-être quand même judicieux de prendre un petit peu d'avance d'ici là pour assurer le coup.
   - Préparez bien le deuxième test à l'aide des quiz entre autres, afin de remonter la note du premier test.
+
+
+## Final
+
+- Voir grille
